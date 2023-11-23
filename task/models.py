@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -46,6 +48,7 @@ class Task(models.Model):
         ("High", "High"),
     )
     name = models.CharField(max_length=255)
+    status = models.CharField(max_length=255, default="In progress")
     description = models.TextField()
     deadline = models.DateField()
     is_completed = models.BooleanField()
@@ -62,3 +65,6 @@ class Task(models.Model):
 
     def __str__(self):
         return self.name
+
+    def check_time_deadline(self):
+        return self.deadline >= datetime.now().date()

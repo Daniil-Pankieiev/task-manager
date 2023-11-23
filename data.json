@@ -1,0 +1,829 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-11-22T13:54:12.759Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "BugFix",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-11-22T13:57:19.391Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "FixBugs",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-11-22T13:59:40.849Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "FixBugs",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2023-11-22T14:13:34.583Z",
+      "user": 2,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Tester",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2023-11-22T14:15:14.245Z",
+      "user": 2,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "NewFeature",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2023-11-22T17:55:11.022Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "Alexander123 (Alexander Cooll)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2023-11-22T17:55:25.696Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "4",
+      "object_repr": "Dima123 (Dima Super)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2023-11-22T17:55:48.640Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "5",
+      "object_repr": "Nik123 (Nik Great)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2023-11-22T17:56:19.162Z",
+      "user": 2,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "FixBugs",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Assignees\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2023-11-23T09:15:26.284Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "Alexander123 (Alexander Cooll)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2023-11-23T09:15:33.972Z",
+      "user": 2,
+      "content_type": 6,
+      "object_id": "4",
+      "object_repr": "Dima123 (Dima Super)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add worker",
+      "content_type": 6,
+      "codename": "add_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change worker",
+      "content_type": 6,
+      "codename": "change_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete worker",
+      "content_type": 6,
+      "codename": "delete_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view worker",
+      "content_type": 6,
+      "codename": "view_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add position",
+      "content_type": 7,
+      "codename": "add_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change position",
+      "content_type": 7,
+      "codename": "change_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete position",
+      "content_type": 7,
+      "codename": "delete_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view position",
+      "content_type": 7,
+      "codename": "view_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add task type",
+      "content_type": 8,
+      "codename": "add_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change task type",
+      "content_type": 8,
+      "codename": "change_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete task type",
+      "content_type": 8,
+      "codename": "delete_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view task type",
+      "content_type": 8,
+      "codename": "view_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add task",
+      "content_type": 9,
+      "codename": "add_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change task",
+      "content_type": 9,
+      "codename": "change_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete task",
+      "content_type": 9,
+      "codename": "delete_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view task",
+      "content_type": 9,
+      "codename": "view_task"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "task",
+      "model": "worker"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "task",
+      "model": "position"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "task",
+      "model": "tasktype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "task",
+      "model": "task"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "b1nigse5dlk9lncryooe395f50pss3cd",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyEsxCIevfsNZJddpGpoUtpT479bkh70OPPezKYirkuJa5M5jqyuyqrTb0eYXlI74CfWx6TTVJd5JN0VfdCm7xPL-3a4fwcFW-lrG8Anm0nEMaLDAALOk_chDwx8zgbA-OFCicFk6-xuMSfZUwAm9fkC_6041Q:1r5m7f:hD4Zxrn4_tBzgbFD3jDEXSPwSoUouguRwO5wS0MMAKg",
+      "expire_date": "2023-12-06T12:14:27.221Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "cuvv0z26pxoi1eez1x1h8iy1grtael4i",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQRO-ydYRYUExwmT5nQAu7xOSDJWOniXL32JIblzPvzXyhLu_wKa3MDXpzgkDLPISlyRQKQw8GDl2k9JS6AX5QvY8qjXWeSlSbonba1G1keV1393AwUBu2tfHokslRxDKRJY-C1kXnfO4Y-Zw1onbdJSZGnY01q8WcZE0eOcLvD6O0PgI:1r5ron:X3uSyynr0_Y9eBA-jKsS3uaJjesAwkzpJXzMVxQ6lQ8",
+      "expire_date": "2023-12-06T18:19:21.193Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "fnbdfhcvlw0dhh2gzeu8draq2bu7d0a6",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQRO-ydYRYUExwmT5nQAu7xOSDJWOniXL32JIblzPvzXyhLu_wKa3MDXo0Jwi0zENYmkyhMPRg4NBFSk-pG-AH1fuo0ljnqUS1KWqnTd1Gltd1dw8HA7VhWxuPLpkcRSwTWfIoaF10zueOkc9ZI2rXXWJi1NlYs1rMSdbkkSP8_socPjM:1r5qvy:s4of4vuQ1rqimWjpbl3C1zMV5Ak5TXRUlTNTM-TpREc",
+      "expire_date": "2023-12-06T17:22:42.178Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "od1c8gvnqb87erzk4ev0jmgr21u0f5c2",
+    "fields": {
+      "session_data": ".eJxVjDsOgzAQRO-ydWSxdoJjyvScwVp718H5GAlDmih3D0g0lDPvzXyhLG__yTXPFbrzCTwt8-CXKpPPDB1oOHSB4lPKBvhB5T6qOJZ5ykFtitppVf3I8rrt7uFgoDpsa-3QRp2CiGEiQw4FjQ3WutQy8iU1iI1tryEyNkkbvVrMUdbkkAP8_qUMPgQ:1r6DBn:MTSuYmARsRy-il3jTJFcxRf31ZA0cVoUri_2-s60MQE",
+      "expire_date": "2023-12-07T17:08:31.109Z"
+    }
+  },
+  {
+    "model": "task.position",
+    "pk": 1,
+    "fields": {
+      "name": "Developer157"
+    }
+  },
+  {
+    "model": "task.position",
+    "pk": 2,
+    "fields": {
+      "name": "Tester"
+    }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 5,
+    "fields": {
+      "name": "2142144"
+    }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 7,
+    "fields": {
+      "name": "dgsssssssssso"
+    }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 8,
+    "fields": {
+      "name": "fasssssssssss"
+    }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 9,
+    "fields": {
+      "name": "fasfasfasfasfasfasfasfasfasfas"
+    }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 10,
+    "fields": {
+      "name": "122222222222222"
+    }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 12,
+    "fields": {
+      "name": "11111111111111111111"
+    }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 13,
+    "fields": {
+      "name": "111111113"
+    }
+  },
+  {
+    "model": "task.worker",
+    "pk": 1,
+    "fields": {
+      "password": "fafooa2@3244",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin12345",
+      "first_name": "admin",
+      "last_name": "admin",
+      "email": "admin@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": null,
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "task.worker",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$Hf3sg4jlgi3VR6rrASDMJ4$NWP/YrlV4QSQ1rsTiqa9crJru+hUbKySzlt4SHWX94Q=",
+      "last_login": "2023-11-23T16:00:43.441Z",
+      "is_superuser": true,
+      "username": "admin1",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@admin.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-11-22T12:14:10.946Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "task.worker",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$VvP2BpsJmXy26vceQeGRFB$eGfgtOsjHIR6qzksHsyDrloxCPgh6cvTi3ACKJN92s0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Alexander123",
+      "first_name": "Alexander",
+      "last_name": "Cooll",
+      "email": "zajcevanton791@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-11-22T17:55:10Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "task.worker",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$uRVTpGNbwfg7Q2Y5pqBJ70$Gw4YeBuSvM3ES93GwkAYvwAxFVTJ7huRtnEoYWgawAs=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Dima123",
+      "first_name": "Dima",
+      "last_name": "Super",
+      "email": "zajc214241241@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-11-22T17:55:25Z",
+      "position": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "task.worker",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$eiNDnb2Qd8dVAzXYRMgbaF$bIaCYPWRVTkj8eokTcTVkpvxyBrKM4SJ89ezwAO9l1w=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Nik123",
+      "first_name": "Nik",
+      "last_name": "Great",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-11-22T17:55:48.116Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "task.worker",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$VsNieyHH1Ki2OIczjdaOIO$dePkPQb4BX1727UZnfYsb8YPLuZmjODr9/CtGzUHZPc=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "AFSfafsa",
+      "first_name": "Alexander",
+      "last_name": "Cooll",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-11-23T12:20:31.611Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "task.worker",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$hX4hMAlK1BFCB6XJnA7Pcs$CE2nVKLQ7bh9cHPUfsa6MLBu0fpphqihh6QYtLOjLQw=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "MenBest",
+      "first_name": "Alexander",
+      "last_name": "Cooll",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-11-23T12:21:41.277Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 5,
+    "fields": {
+      "name": "FixBugs",
+      "status": "Completed on time",
+      "description": "NewBug1",
+      "deadline": "2023-11-25",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 5,
+      "assignees": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 6,
+    "fields": {
+      "name": "NewFeature",
+      "status": "Completed on time",
+      "description": "NewFeature",
+      "deadline": "2023-11-28",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 7,
+      "assignees": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 7,
+    "fields": {
+      "name": "sadssdsda",
+      "status": "Completed after the deadline",
+      "description": "saffsaafs",
+      "deadline": "2023-11-25",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 13,
+      "assignees": []
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 8,
+    "fields": {
+      "name": "������",
+      "status": "Completed on time",
+      "description": "����",
+      "deadline": "2023-11-25",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 10,
+      "assignees": []
+    }
+  }
+]

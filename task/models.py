@@ -65,6 +65,3 @@ class Task(models.Model):
 
     def __str__(self):
         return self.name
-
-    def check_time_deadline(self):
-        return self.deadline >= datetime.now().date()

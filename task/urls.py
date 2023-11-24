@@ -1,15 +1,28 @@
 from django.urls import path
 
-from task.views import TaskListView, index, TaskDetailView, toggle_assign_to_task, TaskCreateView, TaskUpdateView, \
-    TaskDeleteView, WorkerListView, WorkerDetailView, WorkerDeleteView, WorkerUpdateView, WorkerCreateView, \
-    finish_task, TaskTypeListView, TaskTypeCreateView, TaskTypeUpdateView, TaskTypeDeleteView, PositionListView, \
-    PositionCreateView, PositionUpdateView, PositionDeleteView
-
-# from .views import (
-#
-# )
-
-
+from task.views import (
+    TaskListView,
+    index,
+    TaskDetailView,
+    toggle_assign_to_task,
+    TaskCreateView,
+    TaskUpdateView,
+    TaskDeleteView,
+    WorkerListView,
+    WorkerDetailView,
+    WorkerDeleteView,
+    WorkerUpdateView,
+    WorkerCreateView,
+    finish_task,
+    TaskTypeListView,
+    TaskTypeCreateView,
+    TaskTypeUpdateView,
+    TaskTypeDeleteView,
+    PositionListView,
+    PositionCreateView,
+    PositionUpdateView,
+    PositionDeleteView,
+)
 
 urlpatterns = [
     path("", index, name="index"),
@@ -18,11 +31,7 @@ urlpatterns = [
         TaskListView.as_view(),
         name="task-list",
     ),
-    path(
-        "tasks/<int:pk>/",
-        TaskDetailView.as_view(),
-        name="task-detail"
-    ),
+    path("tasks/<int:pk>/", TaskDetailView.as_view(), name="task-detail"),
     path(
         "tasks/<int:pk>/toggle-assign/",
         toggle_assign_to_task,
@@ -56,8 +65,7 @@ urlpatterns = [
     path(
         "workers/<int:pk>/",
         WorkerDetailView.as_view(),
-        name="worker-detail"
-    ),
+        name="worker-detail"),
     path(
         "workers/<int:pk>/update/",
         WorkerUpdateView.as_view(),

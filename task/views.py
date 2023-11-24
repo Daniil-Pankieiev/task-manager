@@ -7,8 +7,14 @@ from django.urls import reverse_lazy
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from task.forms import TaskSearchForm, TaskForm, WorkerSearchForm, WorkerCreationForm, TaskTypeSearchForm, \
-    PositionSearchForm
+from task.forms import (
+    TaskSearchForm,
+    TaskForm,
+    WorkerSearchForm,
+    WorkerCreationForm,
+    TaskTypeSearchForm,
+    PositionSearchForm,
+)
 from task.models import Task, Worker, TaskType, Position
 
 
@@ -74,9 +80,7 @@ class TaskDeleteView(LoginRequiredMixin, generic.DeleteView):
 @login_required
 def toggle_assign_to_task(request, pk):
     worker = Worker.objects.get(id=request.user.id)
-    if (
-        Task.objects.get(id=pk) in worker.tasks.all()
-    ):
+    if Task.objects.get(id=pk) in worker.tasks.all():
         worker.tasks.remove(pk)
     else:
         worker.tasks.add(pk)
@@ -109,7 +113,7 @@ class WorkerDetailView(LoginRequiredMixin, generic.DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        worker_id = self.kwargs['pk']
+        worker_id = self.kwargs["pk"]
 
         worker = Worker.objects.get(id=worker_id)
 
@@ -142,9 +146,7 @@ class WorkerDeleteView(LoginRequiredMixin, generic.DeleteView):
 @login_required
 def finish_task(request, pk):
     task = Task.objects.get(id=pk)
-    if (
-        datetime.now().date() <= task.deadline
-    ):
+    if datetime.now().date() <= task.deadline:
         task.status = "Completed on time"
     else:
         task.status = "Completed after the deadline"
@@ -162,9 +164,7 @@ class TaskTypeListView(LoginRequiredMixin, generic.ListView):
 
         name = self.request.GET.get("name", "")
 
-        context["search_form"] = TaskTypeSearchForm(initial={
-            "name": name
-        })
+        context["search_form"] = TaskTypeSearchForm(initial={"name": name})
 
         return context
 
@@ -204,9 +204,7 @@ class PositionListView(LoginRequiredMixin, generic.ListView):
 
         name = self.request.GET.get("name", "")
 
-        context["search_form"] = TaskTypeSearchForm(initial={
-            "name": name
-        })
+        context["search_form"] = TaskTypeSearchForm(initial={"name": name})
 
         return context
 

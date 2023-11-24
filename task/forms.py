@@ -20,7 +20,9 @@ class TaskForm(forms.ModelForm):
 
     def clean_deadline(self):
         if self.cleaned_data["deadline"] < datetime.now().date():
-            raise ValidationError("Deadline can not be assigned earlier than today")
+            raise ValidationError(
+                "Deadline can not be earlier than today"
+            )
         return self.cleaned_data["deadline"]
 
 

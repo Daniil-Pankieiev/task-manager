@@ -24,11 +24,8 @@
 
       {% for tasktype in tasktype_list %}
         <tr>
-          <td>
-            {{ tasktype.id }}
-          </td>
-          <td>
-            {{ tasktype.name }}
+          <td>{{ tasktype.id }}</td>
+          <td>{{ tasktype.name }}
           </td>
           <td>
             <a href="{% url 'task:tasktype-update' pk=tasktype.id %}">
@@ -46,6 +43,6 @@
     </table>
 
   {% else %}
-    <p>There are no task type in the task manager.</p>
+    <p>There are no task type</p>
   {% endif %}
 {% endblock %}

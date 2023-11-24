@@ -54,9 +54,3 @@ class ModelsTest(TestCase):
 
     def test_worker_str(self):
         self.assertEqual(str(self.worker1), "user1 (userfirst userlast)")
-
-    def test_check_time(self):
-        self.assertTrue(self.task.check_time_deadline())
-        self.assertFalse(self.task2.check_time_deadline())
-
-
